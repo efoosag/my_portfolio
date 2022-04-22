@@ -105,19 +105,17 @@ h1 {
 .work {
   display: grid;
   grid-template-rows: (4, 1fr);
+  row-gap: 88px;
   margin: 114px 24px 114px 24px;
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 16px;
   background-color: #fff;
   border-radius: 16px;
-}
-
-.project_1,
-.project_2,
-.project_3 {
-  margin-bottom: 88px;
 }
 
 .project_image {
