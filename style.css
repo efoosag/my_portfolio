@@ -35,7 +35,7 @@ a {
 }
 
 .font_p {
-  font-family: popp;
+  font-family: popp, sans-serif;
 }
 
 header {
@@ -47,7 +47,6 @@ header {
 }
 
 .logo {
-  font-family: popp;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -66,7 +65,6 @@ header {
 
 h1 {
   margin: 102px 24px 0 24px;
-  font-family: popp;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -78,7 +76,6 @@ h1 {
 
 .front_page {
   margin: 12px 24px 12px 24px;
-  font-family: popp;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -88,7 +85,6 @@ h1 {
 
 .connect {
   margin: 12px 24px 12px 24px;
-  font-family: popp;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -111,6 +107,7 @@ h1 {
   grid-template-rows: (4, 1fr);
   margin: 114px 24px 114px 24px;
 }
+
 .project {
   padding: 16px;
   background-color: #fff;
@@ -310,7 +307,6 @@ h1 {
 
 .pro_name {
   margin-left: 16px;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: bolder;
   font-size: 15px;
