@@ -60,10 +60,8 @@
       <div class="project project_1">
         <div class="project_image_con">
           <img class="project_image" src="/images/pic_1.png" alt="project 1" />
-        </div>
-        <div class="project_image_con_des">
           <img
-            class="project_image"
+            class="project_image_des"
             src="/images/deskstop_1.png"
             alt="project_1"
           />
@@ -92,10 +90,8 @@
       <div class="project project_2">
         <div class="project_image_con">
           <img class="project_image" src="/images/pic_2.png" alt="project 2" />
-        </div>
-        <div class="project_image_con_des">
           <img
-            class="project_image"
+            class="project_image_des"
             src="/images/deskstop_2.png"
             alt="project 2"
           />
@@ -124,9 +120,11 @@
       <div class="project project_3">
         <div class="project_image_con">
           <img class="project_image" src="/images/pic_3.png" alt="project 3" />
-        </div>
-        <div class="project_image_con_des">
-          <img class="project_image" src="/images/pic_1.png" alt="project 3" />
+          <img
+            class="project_image_des"
+            src="/images/pic_1.png"
+            alt="project 3"
+          />
         </div>
         <div class="project_entails">
           <h2 class="project_title font_p">Tonic</h2>
@@ -152,9 +150,11 @@
       <div class="project project_4">
         <div class="project_image_con">
           <img class="project_image" src="/images/pic_4.png" alt="project 4" />
-        </div>
-        <div class="project_image_con_des">
-          <img class="project_image" src="/images/pic_2.png" alt="project 4" />
+          <img
+            class="project_image_des"
+            src="/images/pic_2.png"
+            alt="project 4"
+          />
         </div>
         <div class="project_entails">
           <h2 class="project_title font_p">Tonic</h2>
@@ -179,67 +179,79 @@
       </div>
     </section>
     <section class="about" id="about">
-      <h2 class="about_title font_p">About Myself</h2>
-      <p class="about_details font_p">
-        Hello I’m a software developer! I can help you build a product , feature
-        or website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-      <a class="about_connect" href="#">LET'S CONNECT</a>
-      <ul class="about_media_icon">
-        <li class="about_media_icon_item">
-          <a href="#"><img src="/images/icon4.svg" alt="icon" /></a>
-        </li>
-        <li class="about_media_icon_item">
-          <a href="#"
-            ><img
-              src="/images/icon2.svg"
-              alt="https://www.linkedin.com/in/victor-osagie-a713ba22b/"
-          /></a>
-        </li>
-        <li class="about_media_icon_item">
-          <a href="#"><img src="/images/icon5.svg" alt="icon" /></a>
-        </li>
-        <li class="about_media_icon_item">
-          <a href="#"
-            ><img src="/images/icon1.svg" alt="https://github.com/efoosag"
-          /></a>
-        </li>
-        <li class="about_media_icon_item">
-          <a href="#"><img src="/images/icon3.svg" alt="icon" /></a>
-        </li>
-      </ul>
-      <button type="button" class="btn_about font_p">Get my resume</button>
-      <ul class="subjects">
-        <li class="tech language">
-          <p class="select font_p">Languages</p>
-          <img class="arrow_down" src="/images/down_arrow.png" alt="#" />
-        </li>
-        <li class="program">
-          <img class="pro_image" src="/images/js.png" alt="" />
-          <p class="pro_name font_p">Javascript</p>
-        </li>
-        <li class="program">
-          <img class="pro_image" src="/images/html.png" alt="" />
-          <p class="pro_name">HTML</p>
-        </li>
-        <li class="program">
-          <img class="pro_image" src="/images/css.png" alt="" />
-          <p class="pro_name">CSS</p>
-        </li>
-        <li class="tech frameworks">
-          <p class="font_p">Frameworks</p>
-          <img class="arrow_right" src="/images/right_arrow.png" alt="#" />
-        </li>
-        <li class="tech skills">
-          <p class="font_p">Skills</p>
-          <img class="arrow_right" src="/images/right_arrow.png" alt="#" />
-        </li>
-      </ul>
+      <div class="about_left">
+        <h2 class="about_title font_p">
+          About<br />
+          Myself
+        </h2>
+        <p class="about_details font_p">
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </p>
+        <a class="about_connect" href="#">LET'S CONNECT</a>
+        <ul class="about_media_icon">
+          <li class="about_media_icon_item">
+            <a href="#"><img src="/images/icon4.svg" alt="icon" /></a>
+          </li>
+          <li class="about_media_icon_item">
+            <a href="#"
+              ><img
+                src="/images/icon2.svg"
+                alt="https://www.linkedin.com/in/victor-osagie-a713ba22b/"
+            /></a>
+          </li>
+          <li class="about_media_icon_item">
+            <a href="#"><img src="/images/icon5.svg" alt="icon" /></a>
+          </li>
+          <li class="about_media_icon_item">
+            <a href="#"
+              ><img src="/images/icon1.svg" alt="https://github.com/efoosag"
+            /></a>
+          </li>
+          <li class="about_media_icon_item">
+            <a href="#"><img src="/images/icon3.svg" alt="icon" /></a>
+          </li>
+        </ul>
+        <button type="button" class="btn_about font_p">Get my resume</button>
+      </div>
+      <div class="about_right">
+        <ul class="subjects">
+          <li class="tech language">
+            <p class="select font_p">Languages</p>
+            <img class="arrow_down" src="/images/down_arrow.png" alt="#" />
+          </li>
+          <li>
+            <ul class="program_con">
+              <li class="program">
+                <img class="pro_image" src="/images/js.png" alt="" />
+                <p class="pro_name font_p">Javascript</p>
+              </li>
+              <li class="program">
+                <img class="pro_image" src="/images/html.png" alt="" />
+                <p class="pro_name">HTML</p>
+              </li>
+              <li class="program">
+                <img class="pro_image" src="/images/css.png" alt="" />
+                <p class="pro_name">CSS</p>
+              </li>
+            </ul>
+          </li>
+          <li class="tech frameworks">
+            <p class="font_p">Frameworks</p>
+            <img class="arrow_right" src="/images/right_arrow.png" alt="#" />
+          </li>
+          <li class="tech skills">
+            <p class="font_p">Skills</p>
+            <img class="arrow_right" src="/images/right_arrow.png" alt="#" />
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="contact" id="contact">
       <form action="https://formspree.io/f/mvolvkeo" method="post">
-        <ul>
+        <ul class="form_con">
           <li><h2 class="contact-title font_p">Contact me</h2></li>
           <li>
             <p class="contact-details font_p">
