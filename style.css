@@ -206,6 +206,15 @@ h1 {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  transition: color 2s, font-size 2s, background-color 2s;
+  -webkit-transition: color 2s, font-size 2s, background-color 2s;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  font-size: 20px;
+  background-color: #396df2;
 }
 
 .about {
