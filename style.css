@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
+  min-height: 700px;
 }
 
 ul,
@@ -62,6 +63,7 @@ header {
   background-image: url(/images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 600px;
 }
 
 h1 {
@@ -96,9 +98,8 @@ h1 {
 
 .media_icon {
   display: flex;
-  margin: 24px 0 24px;
+  margin: 24px 0;
   padding-left: 24px;
-  padding-bottom: 172px;
 }
 
 .media_icon_item {
@@ -451,9 +452,8 @@ textarea {
   }
 
   header {
-    padding: 0 100px;
+    padding: 0 100px 72px 100px;
     height: 40px;
-    padding-bottom: 100px;
   }
 
   .menu {
@@ -471,14 +471,17 @@ textarea {
   }
 
   .main {
+    background-image: none;
     background-image: url(/images/deskstop-bg.svg);
-    background-size: contain;
+    background-size: cover;
+    min-height: 650px;
+    margin: 0 24px;
   }
 
   h1,
   .front_page,
   .connect {
-    margin: 0 260px;
+    margin: 0 220px;
   }
 
   h1 {
@@ -487,6 +490,7 @@ textarea {
     line-height: 60px;
     letter-spacing: 0.37px;
     color: #091e42;
+    padding-top: 220px;
   }
 
   .front_page {
@@ -496,9 +500,8 @@ textarea {
   }
 
   .media_icon {
-    margin-left: 236px;
+    margin-left: 196px;
     margin-right: 260px;
-    padding-bottom: 250px;
   }
 
   .work {
@@ -568,18 +571,23 @@ textarea {
     height: 120px;
   }
 
-  form {
-    background-image: none;
+  .f_con {
+    background-color: #6070ff;
+    border-top-left-radius: 100px;
   }
 
-  .form_con {
+  form {
+    background-image: none;
     background-image: url(/images/contact-bg-deskstop.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    margin: 12px 48px;
+    background-size: cover;
+    display: flex;
+    padding-top: 0;
+    margin: 12px 48px 12px 12px;
   }
 
   .contact-title {
+    padding-top: 50px;
     margin-right: auto;
     margin-left: auto;
     width: 65%;
@@ -590,12 +598,20 @@ textarea {
     width: 40%;
   }
 
-  input,
+  input {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    height: 27px;
+  }
+
   textarea {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    width: 60%;
+    width: 40%;
+    height: 170px;
   }
 
   .get-it-touch {
