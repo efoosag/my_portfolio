@@ -445,9 +445,11 @@ textarea {
   .wrapper {
     min-height: 800px;
   }
+
   .hamburger {
     display: none;
   }
+
   header {
     padding: 0 100px;
     height: 40px;
