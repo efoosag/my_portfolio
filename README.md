@@ -8,6 +8,7 @@
 - Applying Github Flow
 - Descriptive and Understanding Commit Messages and ReadMe file
 - Pull Request in Github for code review
+- Deployment of My Portfolio Using Github Pages
 
 ## Built With
 
@@ -22,6 +23,10 @@
 
 **This Project has to do with creating a repo and preparing the repo against errors like syntax errors.**
 **The project also has to do with practicing professional way of documentation in software development.**
+
+## For Access Online
+
+Click: https://efoosag.github.io/my_portfolio/
 
 To get a local copy up and running follow these simple example steps.
 
