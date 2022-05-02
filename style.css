@@ -12,7 +12,7 @@ body {
 }
 
 .wrapper {
-  background-image: url(/images/header-background-mobile.svg);
+  background-image: url(./images/header-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 100px;
@@ -60,7 +60,7 @@ header {
 }
 
 .main {
-  background-image: url(/images/header-shapes\ mobile.png);
+  background-image: url(./images/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 600px;
@@ -218,7 +218,7 @@ h1 {
 }
 
 .about {
-  background-image: url(/images/about_pic.png);
+  background-image: url(./images/about_pic.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 700px;
@@ -345,7 +345,7 @@ h1 {
 }
 
 form {
-  background-image: url(/images/contact-form-shapes-mobile.png);
+  background-image: url(./images/contact-form-shapes-mobile.png);
   background-repeat: no-repeat;
   background-size: auto, cover;
   background-color: #6070ff;
@@ -481,7 +481,7 @@ textarea {
 
   .main {
     background-image: none;
-    background-image: url(/images/deskstop-bg.svg);
+    background-image: url(./images/deskstop-bg.svg);
     background-size: cover;
     min-height: 650px;
     margin: 0 24px;
@@ -587,7 +587,7 @@ textarea {
 
   form {
     background-image: none;
-    background-image: url(/images/contact-bg-deskstop.png);
+    background-image: url(./images/contact-bg-deskstop.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
