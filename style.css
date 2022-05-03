@@ -252,7 +252,7 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #3347FF;
 }
 
 .about_media_icon {
@@ -367,7 +367,7 @@ form {
 
 .contact-details {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -431,7 +431,7 @@ textarea {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  color: #6070ff;
+  color: #4D5EFF;
 }
 
 .get-it-touch:hover {
