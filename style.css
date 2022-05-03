@@ -374,6 +374,19 @@ form {
   color: #ebebff;
 }
 
+label {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
 input,
 textarea {
   background: #fff;
@@ -604,6 +617,12 @@ textarea {
 
   .contact-details {
     margin: 24px auto;
+    width: 40%;
+  }
+
+  label {
+    margin-right: auto;
+    margin-left: auto;
     width: 40%;
   }
 
