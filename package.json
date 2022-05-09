@@ -1,7 +1,7 @@
 {
   "name": "my_portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "> This project is geared towards applying acguired skills for development of my porfolio through the following practices:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/efoosag/my_portfolio#readme",
   "devDependencies": {
-    "hint": "^6.1.11",
+    "hint": "^6.2.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
