@@ -95,9 +95,9 @@ function callCardBody(j) {
     <li class="api_item font_p">${proTech[1]}</li>
     <li class="api_item font_p">${proTech[2]}</li>
   </ul>
-  <button type="button" id="btn_${j + 1}" class="btn btn_${
+  <button type="button" id="btn_${j + 1}" class="btn_${
     j + 1
-  } font_p">See Project</button>
+  } font_p btn">See Project</button>
 </div>`;
 
   cards.innerHTML = cardContent;
