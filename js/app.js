@@ -200,7 +200,9 @@ function validateEmail(email) {
   return true;
 }
 
-form.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  validateEmail(mail);
+  if (validateEmail(mail)) {
+    form.submit();
+  }
 });
