@@ -187,6 +187,20 @@ const mail = document.getElementById('email');
 const message = document.querySelector('small');
 
 function showError() {
-  message.innerText = 'All letters must be in lowercase';
+  message.innerText = 'All letters in email must be in lowercase';
   message.classList.add('error');
 }
+function validateEmail(email) {
+  const emailVal = email.value.trim();
+  const lowerCaseWords = emailVal.toLowerCase();
+  if (emailVal !== lowerCaseWords) {
+    return showError();
+  }
+  message.innerText = '';
+  return true;
+}
+
+form.addEventListener('click', (e) => {
+  e.preventDefault();
+  validateEmail(mail);
+});

@@ -470,6 +470,7 @@ small {
   padding-top: 5px;
   margin: 0;
   visibility: none;
+  font-size: 16px;
 }
 
 .error {
