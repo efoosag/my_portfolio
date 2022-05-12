@@ -204,3 +204,12 @@ form.addEventListener('click', (e) => {
   e.preventDefault();
   validateEmail(mail);
 });
+let contact = {};
+function inputData() {
+  contact = {
+    name: document.querySelector('.name').value,
+    email: document.querySelector('.email').value,
+    msg: document.querySelector('.msg').value,
+  };
+  localStorage.setItem('contactInfo', JSON.stringify(contact));
+}
