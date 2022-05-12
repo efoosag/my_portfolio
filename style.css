@@ -469,12 +469,10 @@ small {
   display: block;
   padding-top: 5px;
   margin: 0;
-  visibility: none;
   font-size: 16px;
 }
 
 .error {
-  visibility: visible;
   color: red;
 }
 
@@ -545,7 +543,6 @@ small {
   height: 90%;
   background-color: #fff;
   border-radius: 12px;
-
   z-index: 10;
 }
 
@@ -575,9 +572,10 @@ small {
   -webkit-transform: rotate(-45deg) translate(-8px, 2px);
   transform: rotate(-45deg) translate(-8px, 2px);
 }
+
 .bar2 {
-  -webkit-transform: rotate(45deg) translate(0px, 5px);
-  transform: rotate(45deg) translate(0px, 5px);
+  -webkit-transform: rotate(45deg) translate(0, 5px);
+  transform: rotate(45deg) translate(0, 5px);
 }
 
 .desk_dev {
@@ -596,9 +594,11 @@ small {
   padding: 0 12px;
   margin-top: 0;
 }
+
 .desk_item {
   display: none;
 }
+
 .desk_button {
   margin-left: 12px;
 }
@@ -609,7 +609,7 @@ small {
 }
 
 .mob_menu {
-  border-bottom: 1 solid gray;
+  border-bottom: gray;
 }
 
 .link_button {
@@ -853,9 +853,10 @@ small {
     -webkit-transform: rotate(-45deg) translate(-8px, 2px);
     transform: rotate(-45deg) translate(-8px, 2px);
   }
+
   .bar2 {
-    -webkit-transform: rotate(45deg) translate(0px, 5px);
-    transform: rotate(45deg) translate(0px, 5px);
+    -webkit-transform: rotate(45deg) translate(0, 5px);
+    transform: rotate(45deg) translate(0, 5px);
   }
 
   .desk_dev {
