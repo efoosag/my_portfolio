@@ -452,6 +452,10 @@ textarea {
   color: #172b4d;
 }
 
+.email {
+  margin-bottom: 0;
+}
+
 .message {
   font-family: popp, sans-serif;
   font-style: normal;
@@ -459,6 +463,18 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+}
+
+small {
+  display: block;
+  padding-top: 5px;
+  margin: 0;
+  visibility: none;
+}
+
+.error {
+  visibility: visible;
+  color: red;
 }
 
 .get-it-touch {
@@ -761,7 +777,8 @@ textarea {
     width: 40%;
   }
 
-  label {
+  label,
+  small {
     margin-right: auto;
     margin-left: auto;
     width: 40%;
@@ -773,6 +790,10 @@ textarea {
     margin-left: auto;
     width: 40%;
     height: 27px;
+  }
+
+  .email {
+    margin-bottom: 0;
   }
 
   textarea {

@@ -179,3 +179,24 @@ butn.forEach((but) => {
     });
   });
 });
+
+// form validation
+
+const form = document.getElementById('form');
+const mail = document.getElementById('email');
+const message = document.querySelector('small');
+
+function showError() {
+  message.innerText = 'All letters must be in lowercase';
+  message.classList.add('error');
+}
+
+function validateEmail(email) {
+  const emailVal = email.value.trim();
+  const lowerCaseWords = emailVal.toLowerCase();
+  if (emailVal !== lowerCaseWords) {
+    return showError();
+  }
+  message.innerText = '';
+  return true;
+}
