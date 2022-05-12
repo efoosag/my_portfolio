@@ -64,6 +64,7 @@ let proFeatures = '';
 let proImage = '';
 // const pLink = '';
 let proTech = [];
+let proBtn = '';
 
 function callCardBody(j) {
   const cards = document.createElement('div');
@@ -95,9 +96,7 @@ function callCardBody(j) {
     <li class="api_item font_p">${proTech[1]}</li>
     <li class="api_item font_p">${proTech[2]}</li>
   </ul>
-  <button type="button" id="btn_${j + 1}" class="btn_${
-    j + 1
-  } font_p btn">See Project</button>
+  <button type="button" id="${proBtn}" class="btn_${proBtn} font_p btn">See Project</button>
 </div>`;
 
   cards.innerHTML = cardContent;
@@ -110,6 +109,7 @@ cardItem.forEach((item, j) => {
   proFeatures = item.pFeatures;
   proImage = item.pImage;
   proTech = item.pTech;
+  proBtn = item.button;
 
   callCardBody(j);
 });
