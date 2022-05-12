@@ -1,74 +1,74 @@
-const hamburger = document.querySelector('.hamburger');
-const Menu = document.querySelector('.menu');
+const hamburger = document.querySelector(".hamburger");
+const Menu = document.querySelector(".menu");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  Menu.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  Menu.classList.toggle("active");
 });
 
-document.querySelectorAll('.menu-item').forEach((n) => {
-  n.addEventListener('click', () => {
-    Menu.classList.toggle('active');
-    hamburger.classList.toggle('active');
+document.querySelectorAll(".menu-item").forEach((n) => {
+  n.addEventListener("click", () => {
+    Menu.classList.toggle("active");
+    hamburger.classList.toggle("active");
   });
 });
 
-const works = document.querySelector('.work');
+const works = document.querySelector(".work");
 
 const cardItem = [
   {
-    pName: 'Tonic',
+    pName: "Tonic",
     pDescription: `A daily selection of privately personalized reads; no accounts or
     sign-ups required.`,
-    pFeatures: ['Canopy', 'Back End Dev', 2015],
-    pImage: ['./images/pic_1.png', './images/deskstop_1.png'],
-    pTech: ['Html', 'css', 'javascript', 'github', 'rugby', 'bootstrap'],
-    link: ['version', 'source'],
-    button: 'btn_1',
+    pFeatures: ["Canopy", "Back End Dev", 2015],
+    pImage: ["./images/pic_1.png", "./images/deskstop_1.png"],
+    pTech: ["Html", "css", "javascript", "github", "rugby", "bootstrap"],
+    link: ["version", "source"],
+    button: "btn_1",
   },
   {
-    pName: 'Multi-Post Stories',
+    pName: "Multi-Post Stories",
     pDescription: `A daily selection of privately personalized reads; no accounts or
     sign-ups required.`,
-    pFeatures: ['Canopy', 'Back End Dev', 2015],
-    pImage: ['./images/pic_2.png', './images/deskstop_2.png'],
-    pTech: ['Html', 'css', 'javascript', 'github', 'rugby', 'bootstrap'],
-    link: ['version', 'source'],
-    button: 'btn_2',
+    pFeatures: ["Canopy", "Back End Dev", 2015],
+    pImage: ["./images/pic_2.png", "./images/deskstop_2.png"],
+    pTech: ["Html", "css", "javascript", "github", "rugby", "bootstrap"],
+    link: ["version", "source"],
+    button: "btn_2",
   },
   {
-    pName: 'Tonic',
+    pName: "Tonic",
     pDescription: `A daily selection of privately personalized reads; no accounts or
     sign-ups required.`,
-    pFeatures: ['Canopy', 'Back End Dev', 2015],
-    pImage: ['./images/pic_3.png', './images/pic_1.png'],
-    pTech: ['Html', 'css', 'javascript', 'github', 'rugby', 'bootstrap'],
-    link: ['version', 'source'],
-    button: 'btn_3',
+    pFeatures: ["Canopy", "Back End Dev", 2015],
+    pImage: ["./images/pic_3.png", "./images/pic_1.png"],
+    pTech: ["Html", "css", "javascript", "github", "rugby", "bootstrap"],
+    link: ["version", "source"],
+    button: "btn_3",
   },
   {
-    pName: 'Multi-Post Stories',
+    pName: "Multi-Post Stories",
     pDescription: `A daily selection of privately personalized reads; no accounts or
     sign-ups required.`,
-    pFeatures: ['Canopy', 'Back End Dev', 2015],
-    pImage: ['./images/pic_4.png', './images/pic_2.png'],
-    pTech: ['Html', 'css', 'javascript', 'github', 'rugby', 'bootstrap'],
-    link: ['version', 'source'],
-    button: 'btn_4',
+    pFeatures: ["Canopy", "Back End Dev", 2015],
+    pImage: ["./images/pic_4.png", "./images/pic_2.png"],
+    pTech: ["Html", "css", "javascript", "github", "rugby", "bootstrap"],
+    link: ["version", "source"],
+    button: "btn_4",
   },
 ];
 
-let proName = '';
-let proDescription = '';
-let proFeatures = '';
-let proImage = '';
+let proName = "";
+let proDescription = "";
+let proFeatures = "";
+let proImage = "";
 // const pLink = '';
 let proTech = [];
-let proBtn = '';
+let proBtn = "";
 
 function callCardBody(j) {
-  const cards = document.createElement('div');
-  cards.classList.add('project');
+  const cards = document.createElement("div");
+  cards.classList.add("project");
   cards.classList.add(`project_${j + 1}`);
 
   const cardContent = `<div class="project_image_con">
@@ -114,11 +114,11 @@ cardItem.forEach((item, j) => {
   callCardBody(j);
 });
 
-const butn = document.querySelectorAll('.btn');
+const butn = document.querySelectorAll(".btn");
 butn.forEach((but) => {
-  but.addEventListener('click', (e) => {
+  but.addEventListener("click", (e) => {
     cardItem.forEach((project) => {
-      if (e.target.getAttribute('id') === project.button) {
+      if (e.target.getAttribute("id") === project.button) {
         proName = project.pName;
         proDescription = project.pDescription;
         proFeatures = project.pFeatures;
@@ -166,27 +166,41 @@ butn.forEach((but) => {
   <button type="button" class="btn link_button font_p">See Live<img class="desk_popup_icon" src="./images/icon.png" alt="icon" /></button>
 <button type="button" class="btn link_button font_p">See Source<img class="desk_popup_icon" src="./images/github.png" alt="github" /></button></div></div>
 </div>`;
-    const wrap = document.querySelector('.wrapper');
-    const overlay = document.createElement('div');
-    overlay.classList.add('j-popup');
-    const wbg = document.createElement('div');
-    wbg.classList.add('wbg-popup');
+    const wrap = document.querySelector(".wrapper");
+    const overlay = document.createElement("div");
+    overlay.classList.add("j-popup");
+    const wbg = document.createElement("div");
+    wbg.classList.add("wbg-popup");
     wbg.innerHTML = cardContent;
     overlay.append(wbg);
     wrap.append(overlay);
-    document.querySelector('.j-popup').addEventListener('click', () => {
-      overlay.classList.toggle('active');
+    document.querySelector(".j-popup").addEventListener("click", () => {
+      overlay.classList.toggle("active");
     });
   });
 });
 
 // form validation
 
-const form = document.getElementById('form');
-const mail = document.getElementById('email');
-const message = document.querySelector('small');
+const form = document.getElementById("form");
+const mail = document.getElementById("email");
+const message = document.querySelector("small");
 
 function showError() {
-  message.innerText = 'All letters must be in lowercase';
-  message.classList.add('error');
+  message.innerText = "All letters must be in lowercase";
+  message.classList.add("error");
 }
+function validateEmail(email) {
+  const emailVal = email.value.trim();
+  const lowerCaseWords = emailVal.toLowerCase();
+  if (emailVal !== lowerCaseWords) {
+    return showError();
+  }
+  message.innerText = "";
+  return true;
+}
+
+form.addEventListener("click", (e) => {
+  e.preventDefault();
+  validateEmail(mail);
+});
