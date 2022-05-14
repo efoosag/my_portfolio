@@ -146,9 +146,7 @@ alt="project_1"
 </div>
 <div class="desk_popup_detail">
 <div class="desk_popup_info">
-<p class="popup_project_details font_p">
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-</p>
+<p class="popup_project_details font_p">${popDescription}</p>
 </div>
 <div class="desk_link_con">
 <ul><li><ul class="api mob_menu">

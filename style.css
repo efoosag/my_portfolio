@@ -545,9 +545,9 @@ small {
 .whitebg {
   position: fixed;
   top: 2%;
-  left: 5%;
+  left: 10%;
   margin: 12px auto;
-  width: 90%;
+  width: 80%;
   background-color: #fff;
   border-radius: 16px;
 }
@@ -602,14 +602,6 @@ small {
   padding: 6px 12px;
 }
 
-.dev_item {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #344563;
-}
-
 .desk_popup_image {
   padding: 0 24px;
   margin-bottom: 0;
@@ -639,7 +631,7 @@ small {
 
 .link_button {
   margin: 12px 12px 28px 0;
-  padding: 12px;
+  padding: 12px 24px;
 }
 
 .desk_popup_icon {
@@ -871,7 +863,6 @@ small {
 
   .desk_title {
     margin: 0;
-    font-size: 42px;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
