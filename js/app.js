@@ -137,7 +137,7 @@ document.querySelectorAll('.btn').forEach((n) => {
 <li class="dev_item font_p">${popFeatures[2]}</li>
 
 </ul>
-<div class="desk_popup_image"> <img class="project_image" src="${popImage[0]}" alt="project 1" />
+<div class="desk_popup_image_con"> <img class="desk_popup_image" src="${popImage[0]}" alt="project 1" />
 <img
 class="project_image_des"
 src="${popImage[1]}"
@@ -146,7 +146,7 @@ alt="project_1"
 </div>
 <div class="desk_popup_detail">
 <div class="desk_popup_info">
-<p class="popup_project_details font_p">${popDescription}</p>
+<p class="popup_project_details font_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
 </div>
 <div class="desk_link_con">
 <ul><li><ul class="api mob_menu">
@@ -162,8 +162,8 @@ alt="project_1"
 <li class="api_item font_p desk_item">${popTech[5]}</li>
 </ul></li></ul>
 <div class="popup_button_con">
-<button type="button" class="btn link_button font_p"><a href="https://efoosag.github.io/my_portfolio/">See Live</a><img class="desk_popup_icon" src="./images/icon.png" alt="icon" /></button>
-<button type="button" class="btn link_button font_p"><a href="https://github.com/efoosag/my_portfolio">See Source</a><img class="desk_popup_icon" src="./images/github.png" alt="github" /></button></div></div></div>
+<button type="button" class="btn link_button font_p"><a href="https://efoosag.github.io/my_portfolio/"><span>See Live</span></a><img class="desk_popup_icon" src="./images/icon.png" alt="icon" /></button>
+<button type="button" class="btn link_button font_p"><a href="https://github.com/efoosag/my_portfolio"><span>See Source</span></a><img class="desk_popup_icon" src="./images/github.png" alt="github" /></button></div></div></div>
 </div>`;
         wbg.classList.add('wbg-popup');
         wbg.innerHTML = cardContent;
