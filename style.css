@@ -588,9 +588,10 @@ small {
   -webkit-transform: rotate(-45deg) translate(-8px, 2px);
   transform: rotate(-45deg) translate(-8px, 2px);
 }
+
 .bar2 {
-  -webkit-transform: rotate(45deg) translate(0px, 5px);
-  transform: rotate(45deg) translate(0px, 5px);
+  -webkit-transform: rotate(45deg) translate(0, 5px);
+  transform: rotate(45deg) translate(0, 5px);
 }
 
 .desk_dev {
@@ -610,9 +611,11 @@ small {
   padding: 0 12px;
   margin-top: 0;
 }
+
 .desk_item {
   display: none;
 }
+
 .link_button {
   margin: 12px 12px 28px 0;
   padding: 12px;
@@ -624,7 +627,7 @@ small {
 }
 
 .mob_menu {
-  border-bottom: 1 solid gray;
+  border-bottom: gray;
 }
 
 @media screen and (min-width: 768px) {
@@ -867,9 +870,10 @@ small {
     -webkit-transform: rotate(-45deg) translate(-8px, 2px);
     transform: rotate(-45deg) translate(-8px, 2px);
   }
+
   .bar2 {
-    -webkit-transform: rotate(45deg) translate(0px, 5px);
-    transform: rotate(45deg) translate(0px, 5px);
+    -webkit-transform: rotate(45deg) translate(0, 5px);
+    transform: rotate(45deg) translate(0, 5px);
   }
 
   .desk_dev {
