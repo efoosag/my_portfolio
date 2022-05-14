@@ -546,8 +546,7 @@ small {
   position: fixed;
   top: 2%;
   left: 5%;
-  margin: 48px auto;
-  height: 720px;
+  margin: 12px auto;
   width: 90%;
   background-color: #fff;
   border-radius: 16px;
@@ -559,7 +558,6 @@ small {
   border-radius: 16px;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
 }
 
 .desk_popup_title {
@@ -569,6 +567,11 @@ small {
 }
 
 .desk_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
   margin: 0;
 }
 
@@ -599,10 +602,18 @@ small {
   padding: 6px 12px;
 }
 
+.dev_item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
 .desk_popup_image {
-  padding: 12px 24px;
-  height: 8%;
+  padding: 0 24px;
   margin-bottom: 0;
+  height: auto;
 }
 
 .desk_popup_detail {
@@ -612,8 +623,18 @@ small {
   margin-top: 0;
 }
 
+.popup_project_details {
+  font-size: 15px;
+  margin-top: 0;
+}
+
 .desk_item {
   display: none;
+}
+
+.popup_button_con {
+  display: flex;
+  justify-content: center;
 }
 
 .link_button {
@@ -827,11 +848,10 @@ small {
 
   .whitebg {
     position: fixed;
-    top: 10%;
-    left: 5%;
+    top: 7.5%;
+    left: 10%;
     margin: auto;
-    height: 80%;
-    width: 90%;
+    width: 80%;
     background-color: #fff;
     border-radius: 16px;
   }
@@ -851,6 +871,11 @@ small {
 
   .desk_title {
     margin: 0;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .popup_project_details {
@@ -881,9 +906,15 @@ small {
     padding: 6px 12px;
   }
 
+  .dev_item {
+    font-size: 15px;
+    color: #7a869a;
+    padding: 12px 0;
+  }
+
   .desk_popup_image {
     padding: 0 12px;
-    height: 300px;
+    height: 250px;
     margin-bottom: 0;
   }
 
@@ -895,11 +926,21 @@ small {
   }
 
   .desk_popup_info {
-    width: 50%;
+    width: 70%;
+    margin-right: 24px;
+  }
+
+  .desk_item {
+    display: block;
   }
 
   .desk_button {
     margin-left: 12px;
+  }
+
+  .link_button {
+    margin: 12px 12px 0 0;
+    padding: 4px 12px;
   }
 
   .desk_popup_icon {
