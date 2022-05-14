@@ -43,7 +43,7 @@ const cardItem = [
     pFeatures: ['Canopy', 'Back End Dev', 2015],
     pImage: ['./images/pic_3.png', './images/pic_1.png'],
     pTech: ['Html', 'css', 'javascript', 'github', 'rugby', 'bootstrap'],
-    link: ['version', 'source'],
+    link: ['live', 'source'],
     button: 'btn_3',
   },
   {
@@ -53,7 +53,7 @@ const cardItem = [
     pFeatures: ['Canopy', 'Back End Dev', 2015],
     pImage: ['./images/pic_4.png', './images/pic_2.png'],
     pTech: ['Html', 'css', 'javascript', 'github', 'rugby', 'bootstrap'],
-    link: ['version', 'source'],
+    link: ['live', 'source'],
     button: 'btn_4',
   },
 ];
@@ -62,7 +62,6 @@ let proName = '';
 let proDescription = '';
 let proFeatures = '';
 let proImage = '';
-// const pLink = '';
 let proTech = [];
 let proBtn = '';
 
@@ -114,70 +113,79 @@ cardItem.forEach((item, j) => {
   callCardBody(j);
 });
 
-const butn = document.querySelectorAll('.btn');
-butn.forEach((but) => {
-  but.addEventListener('click', (e) => {
+const overlay = document.querySelector('.j-popup');
+const whiteBG = document.querySelector('.whitebg');
+overlay.classList.toggle('active');
+whiteBG.classList.toggle('active');
+
+const wbg = document.createElement('div');
+document.querySelectorAll('.btn').forEach((n) => {
+  n.addEventListener('click', (event) => {
     cardItem.forEach((project) => {
-      if (e.target.getAttribute('id') === project.button) {
-        proName = project.pName;
-        proDescription = project.pDescription;
-        proFeatures = project.pFeatures;
-        proImage = project.pImage;
-        proTech = project.pTech;
-        // console.log(t);
-      }
-    });
-    const cardContent = `<div><div class="desk_popup_title"><h2 class="desk_title">${proName}</h2><div class="desk_popup_close"><div class="bar1"></div><div class="bar2"></div></div></div>
-        <ul class="dev desk_dev">
-        <li class="upper dev_item font_p">${proFeatures[0]}</li>
-    <li class="dev_item"><div class="seperator"></div></li>
-    <li class="dev_item font_p">${proFeatures[1]}</li>
-    <li class="dev_item"><div class="seperator"></div></li>
-    <li class="dev_item font_p">${proFeatures[2]}</li>
-  
-  </ul>
-  <div class="desk_popup_image"> <img class="project_image" src="${proImage[0]}" alt="project 1" />
-  <img
-    class="project_image_des"
-    src="${proImage[1]}"
-    alt="project_1"
-  />
-  </div>
-  <div class="desk_popup_detail">
-  <div class="desk_popup_info">
-  <p class="project_details font_p">
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.  
-  </p>
-  </div>
-  <div class="desk_link_con">
-  <ul><li><ul class="api mob_menu">
-  <li class="api_item font_p mob_item">${proTech[0]}</li>
-  <li class="api_item font_p mob_item">${proTech[1]}</li>
-  <li class="api_item font_p mob_item">${proTech[2]}</li>
-  
+      if (event.target.getAttribute('id') === project.button) {
+        const popName = project.pName;
+        const popDescription = [
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+        ];
+        const popFeatures = project.pFeatures;
+        const popImage = project.pImage;
+        const popTech = project.pTech;
+        const cardContent = `<div><div class="desk_popup_title"><h2 class="desk_title">${popName}</h2><div class="desk_popup_close"><div class="bar1"></div><div class="bar2"></div></div></div>
+    <ul class="dev desk_dev">
+    <li class="upper dev_item font_p">${popFeatures[0]}</li>
+<li class="dev_item"><div class="seperator"></div></li>
+<li class="dev_item font_p">${popFeatures[1]}</li>
+<li class="dev_item"><div class="seperator"></div></li>
+<li class="dev_item font_p">${popFeatures[2]}</li>
+
+</ul>
+<div class="desk_popup_image_con"> <img class="project_image desk_popup_image" src="${popImage[0]}" alt="project 1" />
+<img
+class="project_image_des"
+src="${popImage[1]}"
+alt="project_1"
+/>
+</div>
+<div class="desk_popup_detail">
+<div class="mob_popup_info">
+<p class="popup_project_details font_p">${popDescription[0]}</p>
+</div>
+<div class="desk_popup_info">
+<p class="popup_project_details font_p">${popDescription[1]}</p>
+</div>
+<div class="desk_link_con">
+<ul><li><ul class="api mob_menu">
+<li class="api_item font_p mob_item">${popTech[0]}</li>
+<li class="api_item font_p mob_item">${popTech[1]}</li>
+<li class="api_item font_p mob_item">${popTech[2]}</li>
+
 </ul></li>
 <li><ul class="api desk_menu">
 
-<li class="api_item font_p desk_item">${proTech[3]}</li>
-<li class="api_item font_p desk_item">${proTech[4]}</li>
-<li class="api_item font_p desk_item">${proTech[5]}</li>
+<li class="api_item font_p desk_item">${popTech[3]}</li>
+<li class="api_item font_p desk_item">${popTech[4]}</li>
+<li class="api_item font_p desk_item">${popTech[5]}</li>
 </ul></li></ul>
-  
-  <button type="button" class="btn link_button font_p">See Live<img class="desk_popup_icon" src="./images/icon.png" alt="icon" /></button>
-<button type="button" class="btn link_button font_p">See Source<img class="desk_popup_icon" src="./images/github.png" alt="github" /></button></div></div>
+<div class="popup_button_con">
+<button type="button" class="btn link_button font_p"><a href="https://efoosag.github.io/my_portfolio/"><span>See Live</span></a><img class="desk_popup_icon" src="./images/icon.png" alt="icon" /></button>
+<button type="button" class="btn link_button font_p"><a href="https://github.com/efoosag/my_portfolio"><span>See Source</span></a><img class="desk_popup_icon" src="./images/github.png" alt="github" /></button></div></div></div>
 </div>`;
-    const wrap = document.querySelector('.wrapper');
-    const overlay = document.createElement('div');
-    overlay.classList.add('j-popup');
-    const wbg = document.createElement('div');
-    wbg.classList.add('wbg-popup');
-    wbg.innerHTML = cardContent;
-    overlay.append(wbg);
-    wrap.append(overlay);
-    document.querySelector('.j-popup').addEventListener('click', () => {
-      overlay.classList.toggle('active');
+        wbg.classList.add('wbg-popup');
+        wbg.innerHTML = cardContent;
+        overlay.classList.toggle('active');
+        whiteBG.classList.add('whitebg');
+        whiteBG.style.overflow = 'auto';
+        whiteBG.appendChild(wbg);
+      }
     });
+    overlay.classList.remove('active');
+    whiteBG.classList.toggle('active');
   });
+});
+whiteBG.addEventListener('click', () => {
+  overlay.classList.toggle('active');
+  whiteBG.classList.toggle('active');
 });
 
 // form validation

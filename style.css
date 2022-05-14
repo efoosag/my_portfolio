@@ -233,13 +233,12 @@ h1 {
   color: #3d51ff;
   background: #ebebff;
   border-radius: 8px;
-  padding: 4px 12px;
+  padding: 4px 8px;
   margin: 0 8px;
 }
 
-.btn {
-  margin: 24px auto 28px 0;
-  padding: 12px;
+.btn,
+.link_button {
   border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;
@@ -252,6 +251,11 @@ h1 {
   line-height: 24px;
   transition: color 2s, font-size 2s, background-color 2s;
   -webkit-transition: color 2s, font-size 2s, background-color 2s;
+}
+
+.btn {
+  margin: 24px auto 28px 0;
+  padding: 12px;
 }
 
 .btn:hover,
@@ -528,37 +532,58 @@ small {
   position: fixed;
   top: 0;
   left: 0;
-  height: 844px;
+  height: 100vh;
   width: 100%;
-  background-color: rgba(193, 199, 208, 1);
-  opacity: 0.8;
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
 }
 
 .active {
   display: none;
 }
 
-.wbg-popup {
-  margin: 48px 16px;
-  width: auto;
-  height: 90%;
+.whitebg {
+  position: fixed;
+  top: 0;
+  left: 16px;
+  min-height: auto;
+  height: 90vh;
+  margin: 30px 24px 0 0;
   background-color: #fff;
-  border-radius: 12px;
-  z-index: 10;
+  border-radius: 16px;
+}
+
+.whitebg::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.wbg-popup {
+  top: 0;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
 }
 
 .desk_popup_title {
   display: flex;
   justify-content: space-between;
-  padding: 24px 12px 0 12px;
+  padding: 12px 12px 0 12px;
 }
 
 .desk_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
   margin: 0;
 }
 
 .desk_popup_close {
   cursor: pointer;
+  padding-top: 12px;
 }
 
 .bar1,
@@ -580,19 +605,36 @@ small {
 }
 
 .desk_dev {
-  margin-top: 0;
-  padding: 6px 12px;
+  margin-bottom: 20px;
+  padding: 0 12px;
+}
+
+.desk_popup_image_con {
+  padding: 0 12px;
+  max-width: 100%;
+  margin-bottom: 0;
 }
 
 .desk_popup_image {
-  padding: 0 12px;
-  height: 250px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
 }
 
-.desk_popup_detail {
+.mob_popup_info {
   display: flex;
   flex-direction: column;
   padding: 0 12px;
+  margin-top: 0;
+}
+
+.desk_popup_info {
+  display: none;
+}
+
+.popup_project_details {
+  font-size: 15px;
   margin-top: 0;
 }
 
@@ -600,21 +642,34 @@ small {
   display: none;
 }
 
-.desk_button {
-  margin-left: 12px;
+.popup_button_con {
+  display: flex;
+  justify-content: center;
+}
+
+.link_button {
+  margin: 12px 12px 28px 0;
+  padding: 8px;
+  display: flex;
+}
+
+span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #396df2;
 }
 
 .desk_popup_icon {
   margin-left: 6px;
   align-self: center;
+  padding-left: 12px;
 }
 
 .mob_menu {
-  border-bottom: #172b4d;
-}
-
-.link_button {
-  margin-right: 12px;
+  border-bottom: gray;
 }
 
 @media screen and (min-width: 768px) {
@@ -812,33 +867,40 @@ small {
     margin-left: auto;
   }
 
-  .j-popup {
+  .whitebg {
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
-    width: 100%;
-    background-color: #c1c7d0;
-    opacity: 0.8;
+    margin: 30px 142px;
+    width: 80%;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 16px;
   }
 
   .wbg-popup {
-    margin: 48px 92px;
-    width: auto;
-    height: 90%;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 16px;
     z-index: 0;
+    background-repeat: no-repeat;
   }
 
   .desk_popup_title {
     display: flex;
     justify-content: space-between;
-    padding: 12px 12px 0 12px;
+    padding: 24px 24px 0 24px;
   }
 
   .desk_title {
     margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .popup_project_details {
+    margin-top: 0;
   }
 
   .bar1,
@@ -862,12 +924,25 @@ small {
 
   .desk_dev {
     margin-top: 0;
-    padding: 6px 12px;
+    padding: 0 12px;
+  }
+
+  .dev_item {
+    font-size: 15px;
+    color: #7a869a;
+    padding: 12px 0;
+  }
+
+  .desk_popup_image_con {
+    padding: 0 24px 59px 24px;
+    max-width: 100%;
+    height: 586px;
+    margin-bottom: 0;
   }
 
   .desk_popup_image {
-    padding: 0 12px;
-    height: 250px;
+    max-width: 100%;
+    height: auto;
   }
 
   .desk_popup_detail {
@@ -879,10 +954,28 @@ small {
 
   .desk_popup_info {
     width: 60%;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+    margin-top: 0;
+  }
+
+  .mob_popup_info {
+    display: none;
+  }
+
+  .desk_item {
+    display: block;
   }
 
   .desk_button {
     margin-left: 12px;
+  }
+
+  .link_button {
+    margin: 12px 12px 0 0;
+    padding: 4px 8px;
   }
 
   .desk_popup_icon {
