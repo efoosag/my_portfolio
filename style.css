@@ -543,20 +543,33 @@ small {
 }
 
 .whitebg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 16px;
-  margin: 60px 24px 0 0;
+  min-height: auto;
+  height: 90vh;
+  margin: 30px 24px 0 0;
   background-color: #fff;
   border-radius: 16px;
 }
 
+.whitebg::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 .wbg-popup {
+  top: 0;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   width: 100%;
   height: 100%;
+}
+
+.whitebg::webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 .desk_popup_title {
@@ -615,11 +628,15 @@ small {
   height: auto;
 }
 
-.desk_popup_detail {
+.mob_popup_info {
   display: flex;
   flex-direction: column;
   padding: 0 12px;
   margin-top: 0;
+}
+
+.desk_popup_info {
+  display: none;
 }
 
 .popup_project_details {
@@ -638,7 +655,7 @@ small {
 
 .link_button {
   margin: 12px 12px 28px 0;
-  padding: 16px;
+  padding: 8px;
   display: flex;
 }
 
@@ -857,11 +874,12 @@ span {
   }
 
   .whitebg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    margin: 77px 142px;
+    margin: 30px 142px;
     width: 80%;
+    height: 90vh;
     background-color: #fff;
     border-radius: 16px;
   }
@@ -943,6 +961,14 @@ span {
   .desk_popup_info {
     width: 60%;
     margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+    margin-top: 0;
+  }
+
+  .mob_popup_info {
+    display: none;
   }
 
   .desk_item {
@@ -955,7 +981,7 @@ span {
 
   .link_button {
     margin: 12px 12px 0 0;
-    padding: 4px 12px;
+    padding: 4px 8px;
   }
 
   .desk_popup_icon {
