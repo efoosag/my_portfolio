@@ -566,12 +566,6 @@ small {
   height: 100%;
 }
 
-.whitebg::webkit-scrollbar {
-  width: 0;
-  height: 0;
-  display: none;
-}
-
 .desk_popup_title {
   display: flex;
   justify-content: space-between;
